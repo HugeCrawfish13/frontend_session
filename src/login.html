@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="css/login.css?v=<?php echo time(); ?>">
+        <link rel="stylesheet" href="css/navigation.css?v=<?php echo time(); ?>">
+    </head>
+    <body>
+        <div class="nav_top">
+            <nav>
+                <div class="logo">
+                    <img src="logos/arcmanlogo.png" height="50px">
+                </div>
+            </nav>
+        </div>
+        <div class="login">
+        <h3>Login</h3>
+        <form action="index.html" method="POST">
+            <table>
+                <tr>
+                    <td><label>Username: </label></td>
+                    <td><input type="text" id="uname_sign" name="uname_sign" required></td>
+                </tr>
+                <tr>
+                    <td><label>Password: </label></td>
+                    <td><input type="password" id="pass_sign" name="pass_sign" required></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="togglePass()">Show password</td>
+                    <td><a href="forgotpassword.html">Forgot password!?</a></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" id="login" name="login" value="Login"></td>
+                    <td><a href="signup.html">Create account</a></td>
+                </tr>
+            </table>
+        </form>
+        </div>
+        <script>
+            function togglePass(){
+                var pass = document.getElementById("pass_sign");
+                if( pass.type == "password")
+                    pass.type = "text";
+                else
+                    pass.type = "password";
+            }
+        </script>
+    </body>
+</html>

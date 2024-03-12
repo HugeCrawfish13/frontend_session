@@ -1,0 +1,46 @@
+
+<!-- saved from url=(0059)http://localhost/sampleweb_second/editgame.php?editBtn=Edit -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><br>
+<b>Warning</b>:  Undefined array key "id" in <b>C:\xampp\htdocs\sampleweb_second\editgame.php</b> on line <b>5</b><br>
+
+
+    
+        <title>Edit game information</title>
+        <link rel="stylesheet" href="./Edit game information_files/signup.css">
+        <link rel="stylesheet" href="./Edit game information_files/navigation.css">
+        <link rel="stylesheet" href="./Edit game information_files/content.css">
+    
+    
+        <div class="nav_top">
+            <nav>
+                <div class="logo">
+                    <img src="./Edit game information_files/arcmanlogo.png" height="50px">
+                </div>
+                <span class="menubtn" onclick="openNav()">☰</span>
+                <div class="nav_links">
+                    <ul>
+                        <li><a href="http://localhost/sampleweb_second/main.php">Home</a></li>
+                        <li><a href="http://localhost/sampleweb_second/editgame.php?editBtn=Edit">Dashboard</a></li>
+                                                <li><a href="http://localhost/sampleweb_second/settings.php?id=22">Account Settings</a></li>
+                                                <li>
+                            <form action="http://localhost/sampleweb_second/main.php" method="POST">
+                                <input type="submit" id="logout" name="logout" value="Logout">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <center>
+            <h3>Edit game information</h3>
+            <form action="http://localhost/sampleweb_second/addgame.php" method="POST">
+                <br>
+<b>Warning</b>:  Undefined variable $id in <b>C:\xampp\htdocs\sampleweb_second\editgame.php</b> on line <b>80</b><br>
+<br>
+<b>Fatal error</b>:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'accountdb.gamecontent' doesn't exist in C:\xampp\htdocs\sampleweb_second\editgame.php:80
+Stack trace:
+#0 C:\xampp\htdocs\sampleweb_second\editgame.php(80): PDOStatement-&gt;execute(Array)
+#1 {main}
+  thrown in <b>C:\xampp\htdocs\sampleweb_second\editgame.php</b> on line <b>80</b><br>
+</form></center></body></html>

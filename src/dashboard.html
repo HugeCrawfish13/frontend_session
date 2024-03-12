@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="css/main.css?v=<?php echo time(); ?>">
+        <link rel="stylesheet" href="css/navigation.css?v=<?php echo time(); ?>">
+        <link rel="stylesheet" href="css/content.css?v=<?php echo time(); ?>">
+    </head>
+    <body>
+        <div class="nav_top">
+            <nav>
+                <div class="logo">
+                    <img src="logos/arcmanlogo.png" height="50px">
+                </div>
+                <span class="menubtn" onclick="openNav()">&#9776;</span>
+                <div class="nav_links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">Articles</a></li>
+                        <li><a href="dashboard.html" style="color: #666666;">Dashboard</a></li>
+                        <li>
+                            <form action="login.html" method="POST">
+                                <input type="submit" id="logout" name="logout" value="Logout">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="l_nav">
+            <nav>
+                <ul>
+                    <li><a href="gamelist.html">Games</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <center>
+            <h2>Select the following content on the top panel or press the menu.</h2>
+            <div class="intro">
+                <a href='images/pages/img1.jpg' style='color: black;'><img src='images/pages/img1.jpg' height='200px' style='
+                        box-shadow: 1px 2px 5px;'></a> &nbsp;
+                <a href='images/pages/img2.jpg' style='color: black;'><img src='images/pages/img2.jpg' height='200px' style='
+                        box-shadow: 1px 2px 5px;'></a> &nbsp;
+                <a href='images/pages/img3.jpg' style='color: black;'><img src='images/pages/img3.jpg' height='200px' style='
+                        box-shadow: 1px 2px 5px;'></a> &nbsp;
+            </div>
+            </center>
+        </div>
+
+        <div class="count">
+            <div class="gamecount">
+                <h1>0</h1>
+                Game content
+            </div>
+
+            <div class="webmcount">
+                <h1>0</h1>
+                Programming manuals
+            </div>
+        </div>
+        
+        <div class="sideNav" id="sidenav" style="width: 0%">
+            <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+            <a href="index.html" style="color: white;">Home</a>
+            <a href="news.html">Articles</a>
+            <a href="dashboard.html">Dashboard</a>
+            <form action="login.html" method="POST">
+                <input type="submit" id="logout" name="logout" value="Logout">
+            </form>
+            </br>
+            <a href="gamelist.html">Games</a>
+        </div>
+
+		<script>
+			function openNav() {
+				document.getElementById("sidenav").style.width = "50%";
+			}
+			function closeNav() {
+				document.getElementById("sidenav").style.width = "0%";
+			}
+		</script>
+    </body>
+</html>

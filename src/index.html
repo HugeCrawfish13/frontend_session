@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>GamProgManNews</title>
+        <link rel="stylesheet" href="css/main.css?v=<?php echo time(); ?>">
+        <link rel="stylesheet" href="css/navigation.css?v=<?php echo time(); ?>">
+    </head>
+    <body>
+        <div class="nav_top">
+            <nav>
+                <div class="logo">
+                    <img src="logos/arcmanlogo.png" height="50px">
+                </div>
+                <span class="menubtn" onclick="openNav()">&#9776;</span>
+                <div class="nav_links">
+                    <ul>
+                        <li><a href="" style="color: #666666;">Home</a></li>
+                        <li><a href="news.html">Articles</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li>
+                            <form action="login.html" method="POST">
+                                <input type="submit" id="logout" name="logout" value="Logout">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+                <h3>GamProgManNewsShop (Game, Programming, Manual, News Article and Shopping for IT and engineer website)</h3>
+                <p>This website contains information about the full game information with specific details and also including the Programming Manual such as C, C++, Java, PHP and many more languages to develop their application and also included the news article for IT trend and also upcoming latest games and review.</p>
+                <p>If you have inquiries, please check the system requirements of your hardware to indicate it</p>
+                <div class="intro">
+                    <a href='images/pages/img1.jpg' style='color: black;'><img src='images/pages/img1.jpg' height='200px' style='
+                            box-shadow: 1px 2px 5px;'></a> &nbsp;
+                    <a href='images/pages/img2.jpg' style='color: black;'><img src='images/pages/img2.jpg' height='200px' style='
+                            box-shadow: 1px 2px 5px;'></a> &nbsp;
+                    <a href='images/pages/img3.jpg' style='color: black;'><img src='images/pages/img3.jpg' height='200px' style='
+                            box-shadow: 1px 2px 5px;'></a> &nbsp;
+                </div>
+            </br>
+                <h3>Submitted by Arjay De Leon</h3>
+        </div>
+        <div class="sideNav" id="sidenav" style="width: 0%">
+            <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+            <a href="" style="color: white;">Home</a>'
+            <a href="news.html">Articles</a>
+            <a href="dashboard.html">Dashboard</a>
+            <form action="login.html" method="POST">
+                <input type="submit" id="logout" name="logout" value="Logout">
+            </form>
+        </div>
+		<script>
+			function openNav() {
+				document.getElementById("sidenav").style.width = "50%";
+			}
+			function closeNav() {
+				document.getElementById("sidenav").style.width = "0%";
+			}
+		</script>
+    </body>
+</html>

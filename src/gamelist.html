@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Games</title>
+        <link rel="stylesheet" href="css/main.css?v=<?php echo time(); ?>">
+        <link rel="stylesheet" href="css/navigation.css?=<?php echo time(); ?>">
+        <link rel="stylesheet" href="css/content.css?=<?php echo time(); ?>">
+    </head>
+    <body>
+        <div class="nav_top">
+            <nav>
+                <div class="logo">
+                    <img src="logos/arcmanlogo.png" height="50px">
+                </div>
+                <span class="menubtn" onclick="openNav()">&#9776;</span>
+                <div class="nav_links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">Articles</a></li>
+                        <li><a href="dashboard.html" style="color: #666666;">Dashboard</a></li>
+                        <li>
+                            <form action="logout.html" method="POST">
+                                <input type="submit" id="logout" name="logout" value="Logout">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="l_nav">
+            <nav>
+                <ul>
+                    <li><a href="" style="color: white">Games</a></li>
+                    <li><a href="webmanual.html">Programming Manual</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="gamecontent">
+            <h3>Games</h3>
+            <h5>0 game list/s</h5>
+            <table>
+                <tr>
+                    <th>Game Title</th>
+                    <th>Application DRM</th>
+                    <th>Publisher</th>
+                    <th>Developer</th>
+                </tr>
+                <tr>
+                    <td colspan="5">There are empty list. Please create one.</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="sideNav" id="sidenav" style="width: 0%">
+            <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+            <a href="index.html">Home</a>
+            <a href="news.html">Articles</a>
+            <a href="dashboard.html" style="color: white;">Dashboard</a>
+            <form action="login.html" method="POST">
+                <input type="submit" id="logout" name="logout" value="Logout">
+            </form>
+            </br>
+            <a href="" style="color: white">Games</a>
+        </div>
+
+		<script>
+			function openNav() {
+				document.getElementById("sidenav").style.width = "50%";
+			}
+			function closeNav() {
+				document.getElementById("sidenav").style.width = "0%";
+			}
+		</script>
+    </body>
+</html>

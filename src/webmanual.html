@@ -1,0 +1,89 @@
+
+
+<html>
+    <head>
+        <title>Programming Manual</title>
+        <link rel="stylesheet" href="css/main.css?v=<?php echo time(); ?>">
+        <link rel="stylesheet" href="css/navigation.css?v=<?php echo time(); ?>">
+        <link rel="stylesheet" href="css/content.css?v=<?php echo time(); ?>">
+    </head>
+    <body>
+        <div class="nav_top">
+            <nav>
+                <div class="logo">
+                    <img src="logos/arcmanlogo.png" height="50px">
+                </div>
+                <span class="menubtn" onclick="openNav()">&#9776;</span>
+                <div class="nav_links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">Articles</a></li>
+                        <li><a href="dashboard.php" style="color: #666666;">Dashboard</a></li>
+                        <li>
+                            <form action="login.html" method="POST">
+                                <input type="submit" id="logout" name="logout" value="Logout">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="l_nav">
+            <nav>
+                <ul>
+                    <li><a href="gamelist.html">Games</a></li>
+                    <li><a href="" style="color: white">Programming Manual</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="man_content">
+            <h3>Programming Manual</h3>
+            <h5><?= $wcount ?> programming manual/s</h5>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td>HTML Review and Guide</td>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <td>Advanced Array Concept using Bubble Sort</td>
+                    <td>Java</td>
+                </tr>
+                <tr>
+                    <td>Searching Algorithms for C++</td>
+                    <td>Java</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="sideNav" id="sidenav" style="width: 0%">
+            <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+            <a href="index.html">Home</a>
+            <a href="news.html">Articles</a>
+            <a href="dashboard.html" style="color: white;">Dashboard</a>
+            <form action="login.html" method="POST">
+                <input type="submit" id="logout" name="logout" value="Logout">
+            </form>
+            </br>
+            <a href="gamelist.html">Games</a>
+            <a href="" style="color: white">Programming Manual</a>
+        </div>
+
+		<script>
+			function openNav() {
+				document.getElementById("sidenav").style.width = "50%";
+			}
+			function closeNav() {
+				document.getElementById("sidenav").style.width = "0%";
+			}
+		</script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>IT Trending News and Article</title>
+        <link rel="stylesheet" href="css/signup.css?v=<?php echo time(); ?>">
+        <link rel="stylesheet" href="css/navigation.css?=<?php echo time(); ?>">
+        <link rel="stylesheet" href="css/content.css?=<?php echo time(); ?>">
+	</head>
+	<body>
+		<div class="nav_top">
+            <nav>
+                <div class="logo">
+                    <img src="logos/arcmanlogo.png" height="50px">
+                </div>
+                <span class="menubtn" onclick="openNav()">&#9776;</span>
+                <div class="nav_links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="" style="color: #666666;">Articles</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li>
+                            <form action="login.html" method="POST">
+                                <input type="submit" id="logout" name="logout" value="Logout">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="news">
+            <h3>News</h3>
+            <table>
+                <tr>
+                    <td>Top 10: Technology trends for 2024</td>
+                </tr>
+                <tr>
+                    <td>Article for Technology magazine to regain IT</td>
+                </tr>
+                <tr>
+                    <td><a href="https://technologymagazine.com/top10/top-10-technology-trends-for-2024">View article source</td>
+                </tr>
+            </table>
+            </br>
+            
+            <table>
+                <tr>
+                    <td>Top 10: Technology trends for 2024</td>
+                </tr>
+                <tr>
+                    <td><p>Every year, new technologies emerge that provide innovative approaches to business challenges and life’s problems. Some of these stand the test of time and others fall by the wayside, leaving room for new technological developments and startups to join the race. It can be difficult to know which emerging tech is worth the investment and which you should pass over. This list will give you a better understanding of technology trends that will last into the next generation and real-world use cases you can expect to see in 2023 and beyond.</p></td>
+                </tr>
+                <tr>
+                    <td><a href="https://technologymagazine.com/top10/top-10-technology-trends-for-2024">View article source</td>
+                </tr>
+            </table>
+            </br>
+        </div>
+
+        <div class="sideNav" id="sidenav" style="width: 0%">
+            <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+            <a href="index.html">Home</a>
+            <a href="" style="color: white;">Articles</a>
+            <a href="dashboard.html">Dashboard</a>
+            <form action="login.html" method="POST">
+                <input type="submit" id="logout" name="logout" value="Logout">
+            </form>
+            </br>
+        </div>
+
+		<script>
+			function openNav() {
+				document.getElementById("sidenav").style.width = "50%";
+			}
+			function closeNav() {
+				document.getElementById("sidenav").style.width = "0%";
+			}
+		</script>
+	</body>
+</html>

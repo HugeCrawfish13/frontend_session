@@ -1,0 +1,46 @@
+.content{
+    margin-top: 20;
+    align-items:flex-start;
+    padding: 20px 20px 20px 20px;
+    flex-direction: column;
+}
+
+.content h2{
+    padding: 10px 10px 10px 10px;
+}
+
+.content table{
+    width: 100%;
+    box-shadow: 0 0 10px;
+}
+
+.content table,.content th,.content td,.content tr{
+    padding: 10px 10px 10px 10px;
+    border-collapse: collapse;
+    background-color: #adabab;
+}
+
+.add_game input[type="submit"]{
+    padding: 6px 6px 6px 6px;
+    background-color: rgb(79, 56, 184);
+    box-shadow: 1px 2px 5px;
+    border-radius: 2px 2px 2px 2px;
+    border-width: 0px 0px 0px 0px;
+    margin: 10px 10px 20px 00px;
+}
+.editbutton input[type="submit"]{
+    padding: 6px 6px 6px 6px;
+    background-color: rgb(255, 238, 0);
+    box-shadow: 1px 2px 5px;
+    border-radius: 2px 2px 2px 2px;
+    border-width: 0px 0px 0px 0px;
+    margin: 10px 10px 10px 10px;
+}
+.deletebutton input[type="submit"]{
+    padding: 6px 6px 6px 6px;
+    background-color: rgb(255, 81, 0);
+    box-shadow: 1px 2px 5px;
+    border-radius: 2px 2px 2px 2px;
+    border-width: 0px 0px 0px 0px;
+    margin: 0px 0px 10px 10px;
+}

@@ -1,0 +1,15 @@
+#result { 
+	padding:20px; border:1px solid; background:#ccc; 
+}
+.webcam_view{
+	text-align: center;
+}
+input[type="button"]{
+	margin: 5px 5px 5px 5px;
+    padding: 6px 6px 6px 6px;
+    background-color: rgb(48,48, 255);
+    box-shadow: 1px 2px 5px;
+    border-radius: 2px 2px 2px 2px;
+    border-width: 0px 0px 0px 0px;
+    cursor: pointer;
+}

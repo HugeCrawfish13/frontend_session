@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <title>Create account</title>
+        <link rel="stylesheet" href="css/signup.css?v=<?php echo time(); ?>">
+        <link rel="stylesheet" href="css/navigation.css?v=<?php echo time(); ?>">
+    </head>
+    <body>
+        <div class="nav_top">
+            <nav>
+                <div class="logo">
+                    <img src="logos/arcmanlogo.png" height="50px">
+                </div>
+            </nav>
+        </div>
+        <div class="signup">
+            <center><h3>Registration</h3></center>
+            <form action="signup.html" method="POST">
+                <table>
+                    <tr>
+                        <td><label>Username: </label></td>
+                        <td colspan="2"><input type="text" id="uname" name="uname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password: </label></td>
+                        <td colspan="2"><input type="password" id="pass" name="pass" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Confirm Password: </label></td>
+                        <td colspan="2"><input type="password" id="cpass" name="cpass" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email: </label></td>
+                        <td colspan="2"><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><h5>Personal Information</h5></td>
+                    </tr>
+                    <tr>
+                        <td><label>First Name: </label></td>
+                        <td><label>Last Name: </label></td>
+                        <td><label>Age: </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="first_name" name="first_name" required></td>
+                        <td><input type="text" id="last_name" name="last_name" required></td>
+                        <td><input type="number" id="age" name="age" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><label>Address: </label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" id="address" name="address" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Birthday: </label></td>
+                        <td><label>Gender: </label></td>
+                        <td><label>Civil Status: </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="date" id="birthday" name="birthday" required></td>
+                        <td>
+                            <select id="gender" name="gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option> 
+                            </select>
+                        </td>
+                        <td>
+                            <select id="cstatus" name="cstatus" required>
+                                <option value="Single">Single</option>
+                                <option value="Married">Married</option>
+                                <option value="Widowed">Widowed</option>
+                                <option value="Legally seperated">Legally seperated</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Citizenship: </label></td>
+                        <td colspan="2"><label>Religion: </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="citizen" name="citizen" required></td>
+                        <td colspan="2">
+                            <select id="religion" name="religion" required>
+                                <option value="Unknown">Unknown</option>
+                                <option value="Roman Catholic">Roman Catholic</option>
+                                <option value="Born Again">Born Again (Christian)</option>
+                                <option value="IGLESIA NI CRISTO">IGLESIA NI CRISTO</option>
+                                <option value="Church of God">Church of God</option>
+                                <option value="Pentecostal Church of Christ">Pentecostal Church of Christ</option>
+                                <option value="Methodist">Methodist</option>
+                                <option value="Adventist">Adventist</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Height: </label></td>
+                        <td colspan="2"><label>Weight: </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="height" name="height" required></td>
+                        <td colspan="2"><input type="text" id="weight" name="weight" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                        <td><label><h5>Medical information (optional)</h5></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>Blood Type</label></td>
+                        <td><label>Allergies</label></td>
+                        <td><label>Medications</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="blood" name="blood">
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O">O</option>
+                            </select>
+                        </td>
+                        <td><input type="text" id="allergies" name="allergies"></td>
+                        <td><input type="text" id="medications" name="medications"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                        <td><label><h5>Parent's Information (optional)<h5></label></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label>Father's Name: </label></td>
+                        <td><label>Date of Birth: </label></td>
+                        <td><label>Occupation: </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="fr_name" name="fr_name" required></td>
+                        <td><input type="date" id="fr_bdate" name="fr_bdate" required></td>
+                        <td><input type="text" id="fr_work" name="fr_work" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label>Address: </label></td>
+                        <td>Contact #: </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="fr_addr" name="fr_addr" required></td>
+                        <td><input type="text" id="fr_no" name="fr_no" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Mother's Name: </label></td>
+                        <td><label>Date of Birth: </label></td>
+                        <td><label>Occupation: </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="mt_name" name="mt_name" required></td>
+                        <td><input type="date" id="mt_bdate" name="mt_bdate" required></td>
+                        <td><input type="text" id="mt_work" name="mt_work" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label>Address: </label></td>
+                        <td>Contact #: </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="mt_addr" name="mt_addr" required></td>
+                        <td><input type="text" id="mt_no" name="mt_no" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                        <td><label><h5>Educational Background (optional)</h5></label></td>
+                    </tr>
+                    <tr>
+                        <td><label><h5>Primary (Elementary)</h5></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>School: </label></td>
+                        <td><label>Start Date: </label></td>
+                        <td><label>End Date: </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="primschool" name="primschool"></td>
+                        <td><input type="month" id="primstart" name="primstart"></td>
+                        <td><input type="month" id="primend" name="primend">
+                    </tr>
+                    <tr>
+                        <td><label><h5>Secondary (High School)</h5></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>School: </label></td>
+                        <td><label>Start Date: </label></td>
+                        <td><label>End Date: </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="secschool" name="secschool"></td>
+                        <td><input type="month" id="secstart" name="secstart"></td>
+                        <td><input type="month" id="secend" name="secend">
+                    </tr>
+                    <tr>
+                        <td><label><h5>Senior High School</h5></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>School: </label></td>
+                        <td><label>Start Date: </label></td>
+                        <td><label>End Date: </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="sr_school" name="sr_school"></td>
+                        <td><input type="month" id="sr_start" name="sr_start"></td>
+                        <td><input type="month" id="sr_end" name="sr_end"></td>
+                    </tr>
+                    <tr>
+                        <td><label><h5>Tertiary (College)</h5></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>School: </label></td>
+                        <td><label>Start Date: </label></td>
+                        <td><label>End Date: </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="terschool" name="terschool"></td>
+                        <td><input type="month" id="terstart" name="terstart"></td>
+                        <td><input type="month" id="terend" name="terend">
+                    </tr>
+                    <tr>
+                        <td><input type="submit" id="signup" name="signup" value="Sign up"></td>
+                        <td><a href="login.html">Back to log-in page</a></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
